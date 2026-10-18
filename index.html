@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revelación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <section id="tema_invitacion" class="d-flex flex-column justify-content-center align-items-center text-center">
+            <!-- ===== CAJA DE ARRIBA: aquí va la imagen (NUEVA) ===== -->
+    <div class="zona-osos">
+        <img src="imagenes/osos-portada.webp" alt="osos">
+    </div>
+
+
+            <div class="position-relative px-5 py-5">
+                <i class="bi bi-cloudy-fill nube nube1"></i>
+                <i class="bi bi-cloudy-fill nube nube2"></i>
+                <i class="bi bi-cloudy-fill nube nube3"></i>
+                <i class="bi bi-cloudy-fill nube nube4"></i>
+                <i class="bi bi-cloudy-fill nube nube5"></i>
+                <i class="bi bi-cloudy-fill nube nube6"></i>
+        
+                <h1>Revelación de Género</h1>
+            </div>
+        
+            <h2 class="nombres">Sarai y Angel</h2>
+        
+            <i class="bi bi-hearts fs-1"></i>
+
+            <a href="#cuenta_regresiva" class="flecha text-decoration-none mt-4">
+                <i class="bi bi-chevron-double-down fs-2"></i>
+            </a>
+            <!-- ===== CAJA DE ABAJO: vacía, solo de contrapeso (NUEVA) ===== -->
+    <div class="zona-equilibrio"></div>
+        </section>
+
+        <section id="cuenta_regresiva" class="d-flex min-vh-100 flex-column justify-content-center align-items-center text-center px-3 py-5">
+
+            <h2 class="titulo-seccion">Falta muy poco...</h2>
+        
+            <div class="card tarjeta-cuenta border-0 shadow rounded-4 p-3 w-100">
+                <div class="row row-cols-4 g-2">
+                    <div class="col">
+                        <div class="numero" id="dias">00</div>
+                        <div class="etiqueta">Días</div>
+                    </div>
+                    <div class="col">
+                        <div class="numero" id="horas">00</div>
+                        <div class="etiqueta">Horas</div>
+                    </div>
+                    <div class="col">
+                        <div class="numero" id="minutos">00</div>
+                        <div class="etiqueta">Minutos</div>
+                    </div>
+                    <div class="col">
+                        <div class="numero" id="segundos">00</div>
+                        <div class="etiqueta">Segundos</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="titulo-seccion2">Para el gran día</h2>
+
+            <div class="card tarjeta-mensaje border-0 shadow rounded-4 p-4 w-100 mt-5 ">
+                <i class="bi bi-envelope-paper-fill fs-1 mb-2 d-block"></i>
+        
+        <p class="mensaje1">Damos gracias a Dios por este regalo.</p>
+        <p class="mensaje2">Una vida crece dentro de mami y se alimenta con el amor de papi.</p>
+        <p class="mensaje3">La dulce espera está por terminar.</p>
+            </div>
+
+            <button type="button" class="btn boton-video" data-bs-toggle="modal" data-bs-target="#modalVideo">
+                <i class="bi bi-play-circle-fill"></i> Ver ultrasonido
+            </button>
+
+            <a href="#papas" class="flecha text-decoration-none mt-4">
+                <i class="bi bi-chevron-double-down fs-2"></i>
+            </a>
+        </section>
+
+        <section id="papas" class="d-flex min-vh-100 flex-column justify-content-center align-items-center text-center px-3 py-5">
+
+            <div class="card tarjeta-papas border-0 shadow rounded-4 overflow-hidden w-100">
+        
+                <!-- ===== ENCABEZADO: los nombres ===== -->
+                <div class="row g-0 position-relative">
+        
+                    <!-- Lado rosa: mamá -->
+                    <div class="col-6 lado-rosa p-3">
+                        <!-- ESPACIO PARA IMAGEN 1: foto de mamá -->
+                        <div class="foto-marco rounded-circle d-flex justify-content-center align-items-center mx-auto mb-2 overflow-hidden">
+                            <img src="imagenes/sarai.jpeg" alt="Sarai">
+                        </div>
+                        <h2 class="nombre-papa">Sarai</h2>
+                        <p class="rol-papa">Mamá</p>
+                    </div>
+        
+                    <!-- Lado azul: papá -->
+                    <div class="col-6 lado-azul p-3">
+                        <!-- ESPACIO PARA IMAGEN 2: foto de papá -->
+                        <div class="foto-marco rounded-circle d-flex justify-content-center align-items-center mx-auto mb-2 overflow-hidden">
+                            <img src="imagenes/angel.jpeg" alt="Angel">
+                        </div>
+                        <h2 class="nombre-papa">Angel</h2>
+                        <p class="rol-papa">Papá</p>
+                    </div>
+        
+                    <!-- Corazón en el centro, justo en la unión de los dos colores -->
+                    <div class="corazon-centro position-absolute top-50 start-50 translate-middle d-flex justify-content-center align-items-center rounded-circle shadow">
+                        <i class="bi bi-heart-fill latido"></i>
+                    </div>
+        
+                </div>
+        
+                <!-- ===== CUERPO: el mensaje ===== -->
+                <div class="card-body p-4">
+                    <p class="mensaje-papas">Hoy nuestro corazón está lleno de felicidad. Queremos compartir contigo este momento tan especial y descubrir juntos si nuestro pequeño tesoro será niño o niña.</p>
+                
+        
+                    <p class="firma-papas">Con amor, Sarai y Angel</p>
+        
+                    <!-- ESPACIO PARA IMAGEN 3: dibujo decorativo (globos, estrellas, biberón...) -->
+                    <div class="deco-pie mx-auto mt-3 d-flex justify-content-center align-items-center">
+                        <img src="imagenes/stars_6027745.png" alt="star">
+                    </div>
+                </div>
+        
+            </div>
+        
+            <a href="#recepcion" class="flecha text-decoration-none mt-4">
+                <i class="bi bi-chevron-double-down fs-2"></i>
+            </a>
+        </section>
+        <section id="recepcion" class="d-flex min-vh-100 flex-column justify-content-center align-items-center text-center px-3 py-5">
+
+            <div class="card tarjeta-recepcion revelar border-0 shadow rounded-4 w-100">
+        
+                <!-- ESPACIOS PARA IMÁGENES 1 y 2: esquinas de arriba -->
+                <div class="espacio-img esquina-izq">
+                    <img src="imagenes/Ubi (1).png" alt="ubi">
+                </div>
+                <div class="espacio-img esquina-der">
+                    <img src="imagenes/Ubi (1).png" alt="ubi2">
+                </i></div>
+        
+                <!-- 1. ENCABEZADO: título y lugar -->
+                <div class="encabezado-recepcion rounded-top-4 px-4 pt-5 pb-4">
+                    <h2 class="titulo-recepcion">Recepción</h2>
+                    <p class="lugar-recepcion">Terraza Margarita</p>
+                </div>
+        
+                <!-- 2. DIRECCIÓN, MAPA Y BOTÓN -->
+                <div class="p-4">
+                    <p class="direccion">Flor de Dalia, Nueva Col.San Carlos,León, Gto.</p>
+        
+                    <!-- MAPA (opcional: si no lo quieres, borra todo este div) -->
+                    <div class="ratio ratio-4x3 mapa rounded-3 overflow-hidden shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.604256377766!2d-101.591673!3d21.048515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b9641c05a9455%3A0xae100e0f329b3ba3!2sFlor%20de%20Dalia%2C%2037685%20Nueva%20Col.%20San%20Carlos%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1792229739265!5m2!1ses-419!2smx" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Mapa de la recepción"></iframe>
+                    </div>
+        
+                    <!-- BOTÓN A GOOGLE MAPS -->
+                    <a href="https://maps.app.goo.gl/dMgEyG9YPZWE4trR6" target="_blank" rel="noopener" class="btn boton-video mt-4">
+                        <i class="bi bi-geo-alt-fill"></i> Cómo llegar
+                    </a>
+                </div>
+        
+                <!-- 3. CORTE ESTILO BOLETO -->
+                <div class="corte"></div>
+        
+                <!-- 4. HORARIO -->
+                <div class="p-4 pb-5">
+                    <h3 class="titulo-horario">Horario</h3>
+        
+                    <div class="row g-0">
+                        <div class="col-6 dato-fecha">
+                            <i class="bi bi-calendar-event-fill icono-dato"></i>
+                            <p class="dato-grande">25</p>
+                            <p class="dato-chico">Octubre · Domingo</p>
+                        </div>
+                        <div class="col-6">
+                            <i class="bi bi-clock-fill icono-dato"></i>
+                            <p class="dato-grande">2:00</p>
+                            <p class="dato-chico">PM</p>
+                        </div>
+                    </div>
+        
+                    <!-- ESPACIO PARA IMAGEN 3: centro de abajo -->
+                    <div class="espacio-img espacio-centro mx-auto mt-4">
+                        <img src="imagenes/calendario.png" alt="calendario">
+                    </div>
+                </div>
+        
+            </div>
+
+            <a href="#vestimenta" class="flecha text-decoration-none mt-4">
+                <i class="bi bi-chevron-double-down fs-2"></i>
+            </a>
+        
+        </section>
+
+        <section id="vestimenta" class="d-flex min-vh-100 flex-column justify-content-center align-items-center text-center px-3 py-5">
+
+            <div class="card tarjeta-vestimenta revelar border-0 shadow rounded-4 w-100">
+        
+                <!-- ESPACIOS PARA IMÁGENES 1 y 2: esquinas de arriba -->
+                <div class="espacio-img esquina-izq">
+                    <img src="imagenes/clothes1 (1).png" alt="ropa">
+                </i></div>
+                <div class="espacio-img esquina-der">
+                    <img src="imagenes/clothes2).png" alt="ropa1">
+                </i></div>
+        
+                <!-- ETIQUETA DE ROPA: cordón y agujero -->
+                <div class="cordon"></div>
+                <div class="agujero"></div>
+        
+                <div class="px-4 pb-4 pt-5">
+        
+                    <!-- ===== BLOQUE 1: CÓDIGO DE VESTIMENTA ===== -->
+                    <h2 class="titulo-bloque">Código de vestimenta</h2>
+                    <p class="texto-bloque">Te sugerimos tonos claros y suaves. ¡Dejemos el rosa y el azul para el gran momento!</p>
+        
+                    <!-- Paleta: 3 columnas, 2 filas = 6 colores -->
+                    <div class="row row-cols-3 g-3 paleta mt-2">
+                        <div class="col">
+                            <div class="muestra c-amarillo mx-auto"></div>
+                            <p class="nombre-color">Amarillo</p>
+                        </div>
+                        <div class="col">
+                            <div class="muestra c-amarillo-claro mx-auto"></div>
+                            <p class="nombre-color">Amarillo claro</p>
+                        </div>
+                        <div class="col">
+                            <div class="muestra c-beige mx-auto"></div>
+                            <p class="nombre-color">Beige</p>
+                        </div>
+                        <div class="col">
+                            <div class="muestra c-beige-claro mx-auto"></div>
+                            <p class="nombre-color">Beige claro</p>
+                        </div>
+                        <div class="col">
+                            <div class="muestra c-blanco mx-auto"></div>
+                            <p class="nombre-color">Blanco</p>
+                        </div>
+                        <div class="col">
+                            <div class="muestra c-hueso mx-auto"></div>
+                            <p class="nombre-color">Blanco hueso</p>
+                        </div>
+                    </div>
+        
+                    <!-- Línea punteada con corazón -->
+                    <div class="divisor"><i class="bi bi-heart-fill"></i></div>
+        
+                    <!-- ===== BLOQUE 2: PRESENTES ===== -->
+                    <h2 class="titulo-bloque">Presentes</h2>
+                    <p class="texto-bloque">Un detallito para nuestro bebé:</p>
+        
+                    <div class="row g-3 mt-1">
+        
+                        <!-- Caja rosa: ellas -->
+                        <div class="col-6">
+                            <div class="regalo regalo-rosa">
+                                <!-- ESPACIO PARA IMAGEN 3: dibujo de pañales -->
+                                <div class="espacio-img espacio-regalo mx-auto">
+                                    <img src="imagenes/pañales (1).png" alt="pañales">
+                                </div>
+                                <p class="regalo-quien">Ellas traen</p>
+                                <p class="regalo-que">Pañales</p>
+                            </div>
+                        </div>
+        
+                        <!-- Caja azul: ellos -->
+                        <div class="col-6">
+                            <div class="regalo regalo-azul">
+                                <!-- ESPACIO PARA IMAGEN 4: dibujo de toallitas -->
+                                <div class="espacio-img espacio-regalo mx-auto">
+                                    <img src="imagenes/toallas.png" alt="toallitas">
+                                </div>
+                                <p class="regalo-quien">Ellos traen</p>
+                                <p class="regalo-que">Toallitas húmedas</p>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+            <a href="#confirmar" class="flecha text-decoration-none mt-4">
+                <i class="bi bi-chevron-double-down fs-2"></i>
+            </a>
+        
+        </section>
+        
+        <section id="confirmar" class="d-flex min-vh-100 flex-column justify-content-center align-items-center text-center px-3 py-5">
+
+            <div class="card tarjeta-confirmar revelar border-0 shadow rounded-4 w-100">
+        
+                <!-- ESPACIOS PARA IMÁGENES 1 y 2: esquinas de arriba -->
+                <div class="espacio-img esquina-izq">
+                    <img src="imagenes/carreola.png" alt="carreola">
+                </div>
+                <div class="espacio-img esquina-der">
+                    <img src="imagenes/chupon.png" alt="chupon">
+                </div>
+        
+                <!-- 1. SOLAPA DEL SOBRE -->
+                <div class="solapa rounded-top-4"></div>
+        
+                <!-- 2. SELLO CON CORAZÓN, en la punta de la solapa -->
+                <div class="sello position-absolute start-50 translate-middle d-flex justify-content-center align-items-center rounded-circle shadow">
+                    <i class="bi bi-heart-fill latido"></i>
+                </div>
+        
+                <!-- 3. CONTENIDO -->
+                <div class="px-4 pb-4 pt-5">
+        
+                    <h2 class="titulo-confirmar">Confirma tu asistencia</h2>
+                    <p class="texto-confirmar">Tu presencia hará este día todavía más especial.</p>
+        
+                    <form id="formConfirmar" class="text-start mt-4">
+        
+                        <!-- Campo: nombre -->
+                        <div class="mb-3">
+                            <label for="nombreInvitado" class="etiqueta-form">Tu nombre</label>
+                            <input type="text" id="nombreInvitado" class="form-control campo-form" placeholder="Ej. María López" required>
+                            <p id="avisoNombre" class="aviso-form" hidden>Escribe tu nombre para poder confirmar.</p>
+                        </div>
+        
+                        <!-- Campo: número de personas -->
+                        <div class="mb-3">
+                            <label for="personasInvitado" class="etiqueta-form">¿Cuántas personas asistirán?</label>
+                            <select id="personasInvitado" class="form-select campo-form">
+                                <option value="1" selected>1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                            </select>
+                        </div>
+        
+                        <!-- Campo: mensaje opcional -->
+                        <div class="mb-4">
+                            <label for="mensajeInvitado" class="etiqueta-form">Un mensaje para los papás (opcional)</label>
+                            <textarea id="mensajeInvitado" class="form-control campo-form" rows="3" maxlength="200" placeholder="Escribe unas palabras con cariño..."></textarea>
+                        </div>
+        
+                        <!-- EL ÚNICO BOTÓN -->
+                        <button type="submit" class="btn boton-video w-100 mt-3">
+                            <i class="bi bi-whatsapp"></i> Confirmar asistencia
+                        </button>
+        
+                        <!-- Mensaje de gracias (aparece después de confirmar) -->
+                        <p id="textoGracias" class="texto-gracias text-center" hidden></p>
+        
+                    </form>
+                </div>
+        
+            </div>
+        
+            <!-- CIERRE -->
+            <p class="cierre mt-5">¡Te esperamos, no faltes!</p>
+            <i class="bi bi-hearts fs-2 icono-cierre"></i>
+        
+            <!-- ESPACIO PARA IMAGEN 3: centro de abajo -->
+            <div class="espacio-img espacio-centro mx-auto mt-3">
+            <img src="imagenes/pies_final.png" alt="ultima imagen">
+            </div>
+        
+        </section>
+    </main>
+    
+    <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="tituloModalVideo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 class="modal-title" id="tituloModalVideo">Nuestro ultrasonido</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body p-0">
+                    <video id="videoUltrasonido" class="w-100" controls playsinline preload="metadata">
+                        <source src="video/ultrasonido.mp4" type="video/mp4">
+                        Tu navegador no puede reproducir este video.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

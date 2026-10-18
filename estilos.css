@@ -1,0 +1,670 @@
+@font-face {
+    font-family: "CabinetGrotesk_Complete";
+    src: url("WEB/fonts/CabinetGrotesk-Bold.woff2") format("woff2");
+         font-weight: 700;
+}
+@font-face {
+    font-family: "DancingScript_Complete";
+    src: url("fonts1/DancingScript-Bold.woff2") format("woff2");
+         font-weight: 700;
+}
+h1 {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 2.1rem;
+    color: #5E5297;
+}
+.nombres {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 1.7rem;
+    margin-top: -40px;
+    margin-bottom: 0rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+#tema_invitacion, #cuenta_regresiva{
+    background: linear-gradient(to right, #FE9EC7 50%, #89D4FF 50%);
+}
+/* Lo que comparten todas las nubes */
+.nube {
+    position: absolute;
+    color: #F9F6C4;
+}
+
+/* Cada nube con su lugar y su tamaño */
+.nube1 { top: -20%;    left: 5%;   font-size: 3.1rem; }
+.nube2 { top: 0;    right: 5%; font-size: 2.8rem; }
+.nube3 { top: 40%;  left: 0;   font-size: 1.8rem; }
+.nube4 { top: 45%;  right: 0;  font-size: 2.5rem; }
+.nube5 { bottom: 0; left: 13%;  font-size: 2rem; }
+.nube6 { bottom: -7%; right: 13%; font-size: 1.9rem; }
+
+.flecha {
+    color: #5E5297;
+}
+
+.titulo-seccion {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 2.2rem;
+    color: #5E5297;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-seccion2 {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 2.2rem;
+    color: #5E5297;
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.tarjeta-cuenta {
+    background-color: #F9F6C4;
+    max-width: 420px;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.numero {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 2rem;
+    color: #5E5297;
+}
+
+.etiqueta {
+    font-size: 0.75rem;
+    color: #5E5297;
+}
+
+/* La animación: sube 10px y vuelve a bajar */
+@keyframes flotar {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.tarjeta-mensaje{
+    background-color: #F9F6C4;
+    max-width: 420px;
+    color: #5E5297;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+.tarjeta-mensaje.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.mensaje1{
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 1.2rem;
+    color: #766bb1;
+
+}
+.mensaje2{
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 1.2rem;
+    color: #766bb1;
+
+}
+.mensaje3{
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 1.5rem;
+    color: #766bb1;
+
+}
+
+/* ===== Botón del video ===== */
+/* Bootstrap controla sus botones con variables; aquí las cambiamos por tus colores */
+.boton-video {
+    --bs-btn-bg: #5E5297;
+    --bs-btn-color: #F9F6C4;
+    --bs-btn-border-color: #5E5297;
+    --bs-btn-hover-bg: #4A3F7A;
+    --bs-btn-hover-color: #F9F6C4;
+    --bs-btn-hover-border-color: #4A3F7A;
+    --bs-btn-active-bg: #4A3F7A;
+    --bs-btn-active-color: #F9F6C4;
+    --bs-btn-active-border-color: #4A3F7A;
+
+    margin-top: 6rem;
+
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 1.1rem;
+    border-radius: 50rem;
+    padding: 0.6rem 1.5rem;
+    animation: latido 2s ease-in-out infinite;
+}
+
+/* Animación opcional: el botón "late" suavemente para invitar a tocarlo */
+@keyframes latido {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+/* ===== Ventana del video ===== */
+#modalVideo .modal-content {
+    background-color: #F9F6C4;
+    border: 0;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+#modalVideo .modal-title {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 1.8rem;
+    color: #5E5297;
+}
+/* ===== SECCIÓN DE LOS PAPÁS ===== */
+
+/* Fondo crema para que esta sección se distinga de las otras dos */
+#papas {
+    background-color: #F9F6C4;
+}
+
+/* La carta: casi blanca, con ancho máximo y estado inicial de la animación */
+.tarjeta-papas {
+    background-color: #FFFDF0;
+    max-width: 420px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.tarjeta-papas.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Los dos lados del encabezado */
+.lado-rosa {
+    background-color: #FE9EC7;
+}
+.lado-azul {
+    background-color: #89D4FF;
+}
+
+/* Marco circular para las fotos (punteado = espacio vacío por ahora) */
+.foto-marco {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #FFFFFF;
+}
+
+/* Cuando pongas una foto de verdad, este estilo la ajusta al círculo */
+.foto-marco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* El nombre: aquí está el énfasis, es la letra más grande de toda la carta */
+.nombre-papa {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 2.8rem;
+    color: #4A3F7A;
+    margin: 0;
+    line-height: 1;
+}
+
+.rol-papa {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4A3F7A;
+    margin: 0.3rem 0 0 0;
+}
+
+/* Corazón del centro */
+.corazon-centro {
+    width: 46px;
+    height: 46px;
+    background-color: #FFFDF0;
+    color: #FE9EC7;
+    font-size: 1.4rem;
+}
+
+/* El latido va en el <i> de adentro (explicación abajo) */
+.latido {
+    display: inline-block;
+    animation: latido 1.5s ease-in-out infinite;
+}
+
+/* Cuerpo del mensaje */
+.mensaje-papas {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #5E5297;
+}
+
+.firma-papas {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 1.8rem;
+    color: #5E5297;
+    margin-bottom: 0;
+}
+
+/* Espacio para la imagen decorativa del final */
+.deco-pie {
+    width: 70px;
+    height: 70px;
+}
+
+.deco-pie img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* ===== SECCIÓN RECEPCIÓN ===== */
+
+/* Variable: guarda el color del fondo en un solo lugar para usarlo en varios (ver explicación abajo) */
+#recepcion {
+    --fondo-recepcion: #89D4FF;
+    background-color: var(--fondo-recepcion);
+}
+
+.tarjeta-recepcion {
+    background-color: #FFFDF0;
+    max-width: 420px;
+}
+
+/* Animación de aparición reutilizable: sirve para cualquier elemento con la clase "revelar" */
+.revelar {
+    opacity: 0;
+    transform: translateY(50px) rotate(-2deg);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.revelar.visible {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+/* --- Encabezado --- */
+.encabezado-recepcion {
+    background-color: #FE9EC7;
+}
+
+.titulo-recepcion {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 3.2rem;
+    color: #4A3F7A;
+    margin: 0;
+    line-height: 1;
+}
+
+.lugar-recepcion {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4A3F7A;
+    margin: 0.6rem 0 0 0;
+}
+
+/* --- Dirección y mapa --- */
+.direccion {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 0.95rem;
+    color: #5E5297;
+}
+
+.mapa iframe {
+    border: 0;
+}
+
+/* --- Corte estilo boleto --- */
+.corte {
+    position: relative;
+    border-top: 3px dashed #FE9EC7;
+}
+
+.corte::before,
+.corte::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--fondo-recepcion);
+}
+
+.corte::before { left: -14px; }
+.corte::after  { right: -14px; }
+
+/* --- Horario --- */
+.titulo-horario {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 2rem;
+    color: #5E5297;
+    margin-bottom: 1rem;
+}
+
+.dato-fecha {
+    border-right: 2px dotted #FE9EC7;
+}
+
+.icono-dato {
+    color: #44ACFF;
+    font-size: 1.6rem;
+}
+
+.dato-grande {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 2.6rem;
+    color: #4A3F7A;
+    line-height: 1;
+    margin: 0.3rem 0 0 0;
+}
+
+.dato-chico {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #5E5297;
+    margin: 0.3rem 0 0 0;
+}
+
+/* --- Espacios para imágenes decorativas --- */
+.espacio-img {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.espacio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.esquina-izq { position: absolute; top: -18px; left: -10px; z-index: 2; }
+.esquina-der { position: absolute; top: -18px; right: -10px; z-index: 2; }
+.espacio-centro { width: 90px; height: 90px; }
+@media (prefers-reduced-motion: reduce) {
+    .tarjeta-cuenta, .boton-video, .latido {
+        animation: none;
+    }
+}
+
+/* ===== SECCIÓN CÓDIGO DE VESTIMENTA Y PRESENTES ===== */
+
+/* Variable: el color del fondo se guarda aquí porque lo usan el fondo y el agujero */
+#vestimenta {
+    --fondo-vestimenta: #FE9EC7;
+    background-color: var(--fondo-vestimenta);
+}
+
+.tarjeta-vestimenta {
+    background-color: #FFFDF0;
+    max-width: 420px;
+}
+
+/* --- Etiqueta de ropa: cordón y agujero --- */
+.cordon {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    width: 4px;
+    height: 65px;
+    margin-left: -2px;
+    background-color: #5E5297;
+    border-radius: 2px;
+}
+
+.agujero {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-radius: 50%;
+    border: 3px solid #5E5297;
+    background-color: var(--fondo-vestimenta);
+}
+
+/* --- Títulos y textos de los dos bloques --- */
+.titulo-bloque {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 2.3rem;
+    color: #5E5297;
+    margin: 0;
+}
+
+.texto-bloque {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 1rem;
+    color: #5E5297;
+    margin: 0.5rem 0 0 0;
+}
+
+/* --- Paleta de colores --- */
+.muestra {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0 0 0 2px rgba(94, 82, 151, 0.25), 0 4px 10px rgba(0, 0, 0, 0.12);
+    transform: scale(0);                    /* empiezan "escondidos" (tamaño cero) */
+    transition: transform 0.6s ease;
+}
+
+/* Cuando la carta aparece, cada círculo crece a su tamaño normal */
+.tarjeta-vestimenta.visible .muestra {
+    transform: scale(1);
+}
+
+/* Cada círculo aparece un poquito después del anterior */
+.paleta .col:nth-child(1) .muestra { transition-delay: 0.3s; }
+.paleta .col:nth-child(2) .muestra { transition-delay: 0.45s; }
+.paleta .col:nth-child(3) .muestra { transition-delay: 0.6s; }
+.paleta .col:nth-child(4) .muestra { transition-delay: 0.75s; }
+.paleta .col:nth-child(5) .muestra { transition-delay: 0.9s; }
+.paleta .col:nth-child(6) .muestra { transition-delay: 1.05s; }
+
+/* Los 6 colores: aquí se cambia cada tono */
+.c-amarillo       { background-color: #FFE27A; }
+.c-amarillo-claro { background-color: #FFF3B5; }
+.c-beige          { background-color: #E3CFAE; }
+.c-beige-claro    { background-color: #F2E7D3; }
+.c-blanco         { background-color: #FFFFFF; }
+.c-hueso          { background-color: #FAF6EC; }
+
+.nombre-color {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    color: #5E5297;
+    margin: 0.5rem 0 0 0;
+}
+
+/* --- Línea punteada con corazón --- */
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.75rem 0;
+    color: #FE9EC7;
+}
+
+.divisor::before,
+.divisor::after {
+    content: "";
+    flex: 1;
+    border-top: 2px dotted #FE9EC7;
+}
+
+/* --- Cajas de presentes --- */
+.regalo {
+    height: 100%;
+    padding: 1rem 0.75rem;
+    border-radius: 1.2rem;
+}
+
+.regalo-rosa { background-color: #FE9EC7; }
+.regalo-azul { background-color: #89D4FF; }
+
+.espacio-regalo {
+    width: 64px;
+    height: 64px;
+}
+
+.regalo-quien {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #4A3F7A;
+    margin: 0.7rem 0 0.2rem 0;
+}
+
+.regalo-que {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    color: #4A3F7A;
+    margin: 0;
+}
+/* ===== SECCIÓN CONFIRMAR ASISTENCIA ===== */
+
+#confirmar {
+    background-color: #F9F6C4;
+}
+
+/* Variable: la altura de la solapa se guarda aquí porque la usan dos cosas (solapa y sello) */
+.tarjeta-confirmar {
+    --alto-solapa: 110px;
+    background-color: #FFFDF0;
+    max-width: 420px;
+}
+
+/* La solapa: un rectángulo partido en rosa y azul, recortado en forma de triángulo */
+.solapa {
+    height: var(--alto-solapa);
+    background: linear-gradient(to right, #FE9EC7 50%, #89D4FF 50%);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+/* El sello: se coloca justo en la punta del triángulo */
+.sello {
+    top: var(--alto-solapa);
+    width: 60px;
+    height: 60px;
+    background-color: #5E5297;
+    color: #F9F6C4;
+    font-size: 1.6rem;
+    border: 4px solid #FFFDF0;
+}
+
+.titulo-confirmar {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 2.4rem;
+    color: #5E5297;
+    margin: 0;
+}
+
+.texto-confirmar {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 1rem;
+    color: #5E5297;
+    margin: 0.5rem 0 0 0;
+}
+
+/* Etiquetas de los campos */
+.etiqueta-form {
+    display: block;
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #5E5297;
+    margin-bottom: 0.4rem;
+}
+
+/* Los campos: borde azul, y rosa cuando el invitado escribe en ellos */
+.campo-form {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    color: #4A3F7A;
+    background-color: #FFFFFF;
+    border: 2px solid #89D4FF;
+    border-radius: 0.9rem;
+    padding: 0.7rem 1rem;
+}
+
+.campo-form:focus {
+    color: #4A3F7A;
+    border-color: #FE9EC7;
+    box-shadow: 0 0 0 0.25rem rgba(254, 158, 199, 0.35);
+}
+
+.campo-form::placeholder {
+    color: #9A92C4;
+}
+
+/* Aviso de error y mensaje de gracias */
+.aviso-form {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 0.85rem;
+    color: #B03A6E;
+    margin: 0.4rem 0 0 0;
+}
+
+.texto-gracias {
+    font-family: "CabinetGrotesk_Complete", sans-serif;
+    font-size: 0.95rem;
+    color: #5E5297;
+    margin: 1rem 0 0 0;
+}
+
+/* Cierre de la página */
+.cierre {
+    font-family: "DancingScript_Complete", sans-serif;
+    font-size: 2rem;
+    color: #5E5297;
+    margin-bottom: 0.5rem;
+}
+
+.icono-cierre {
+    color: #FE9EC7;
+}
+/* ===== IMAGEN DE LOS OSITOS EN LA PORTADA ===== */
+
+/* La portada es más alta que la pantalla: así sobra más espacio para la imagen */
+#tema_invitacion {
+    min-height: 135vh;
+}
+
+/* Las dos cajas se reparten POR IGUAL el espacio que sobra arriba y abajo del título */
+.zona-osos,
+.zona-equilibrio {
+    flex: 1 1 0;
+    min-height: 0;
+    width: 100%;
+}
+
+/* La caja de arriba es la referencia para colocar la imagen dentro */
+.zona-osos {
+    position: relative;
+}
+
+/* La imagen: pegada arriba, centrada, lo más ancha posible sin deformarse */
+.zona-osos img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100% - 2rem);   /* 1.5rem = distancia de seguridad con las nubes */
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;           /* si no cabe, se ajusta sin estirarse */
+    object-position: center top;   /* y se queda pegada arriba */
+
+    /* Los bordes izquierdo y derecho se desvanecen suave */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+}
